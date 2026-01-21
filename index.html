@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Haven | Luxury Hotel & Resort</title>
+    <meta name="description"
+        content="Experience unparalleled luxury at Grand Haven Hotel & Resort. Book your stay today for an unforgettable experience.">
+
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top transition-all" id="mainHeader">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-text">GRAND HAVEN</span>
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hotels">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#amenities">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-accent px-4" href="#booking">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-3 fw-bold mb-3 animate-up">Discover a Haven of <span class="text-accent">Luxury</span>
+            </h1>
+            <p class="lead mb-5 animate-up-delay-1">Experience elegance, comfort, and world-class hospitality in the
+                most breath-taking locations.</p>
+
+            <!-- Booking Form -->
+            <div class="booking-form-wrapper shadow-lg animate-up-delay-2" id="booking">
+                <form class="row g-2 g-md-3 align-items-end p-3 p-md-4 bg-white text-dark rounded-4">
+                    <div class="col-md-3 text-start">
+                        <label class="form-label small fw-bold text-uppercase">Location</label>
+                        <select class="form-select border-0 bg-light py-3">
+                            <option selected>Select Destination</option>
+                            <option>Maldives</option>
+                            <option>Paris</option>
+                            <option>Dubai</option>
+                            <option>Bali</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 text-start">
+                        <label class="form-label small fw-bold text-uppercase">Check-in</label>
+                        <input type="date" class="form-control border-0 bg-light py-3">
+                    </div>
+                    <div class="col-md-3 text-start">
+                        <label class="form-label small fw-bold text-uppercase">Guests</label>
+                        <select class="form-select border-0 bg-light py-3">
+                            <option selected>1 Adult</option>
+                            <option>2 Adults</option>
+                            <option>3 Adults</option>
+                            <option>Family</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit"
+                            class="btn btn-primary w-100 py-3 fw-bold text-uppercase transition-all">Search
+                            Available</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Featured Hotels Section -->
+        <section id="hotels" class="featured-hotels bg-light">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h6 class="text-accent text-uppercase fw-bold mb-2">Our Destinations</h6>
+                    <h2 class="fw-bold">Our Featured Hotels</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="row g-3 g-md-4">
+                    <!-- Hotel 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="hotel-card border-0 shadow-sm bg-white overflow-hidden rounded-4 h-100">
+                            <div class="hotel-img-wrapper overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800&fm=webp"
+                                    srcset="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=400&fm=webp 400w,
+                                            https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800&fm=webp 800w,
+                                            https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200&fm=webp 1200w"
+                                    sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                                    class="img-fluid transition-all" alt="Hotel Azure" loading="lazy">
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="text-accent small fw-bold"><i class="fas fa-star"></i> 5.0
+                                        Rating</span>
+                                    <span class="price-tag fw-bold">From $299</span>
+                                </div>
+                                <h4 class="mb-1">Azure Resort & Spa</h4>
+                                <p class="text-muted small mb-4"><i class="fas fa-map-marker-alt me-1"></i> Maldives,
+                                    Indian Ocean</p>
+                                <a href="#" class="btn btn-outline-primary w-100 fw-bold">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hotel 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="hotel-card border-0 shadow-sm bg-white overflow-hidden rounded-4 h-100">
+                            <div class="hotel-img-wrapper overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800&fm=webp"
+                                    srcset="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=400&fm=webp 400w,
+                                            https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800&fm=webp 800w,
+                                            https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1200&fm=webp 1200w"
+                                    sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                                    class="img-fluid transition-all" alt="The Grand Regency" loading="lazy">
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="text-accent small fw-bold"><i class="fas fa-star"></i> 4.9
+                                        Rating</span>
+                                    <span class="price-tag fw-bold">From $450</span>
+                                </div>
+                                <h4 class="mb-1">The Grand Regency</h4>
+                                <p class="text-muted small mb-4"><i class="fas fa-map-marker-alt me-1"></i> Paris,
+                                    France</p>
+                                <a href="#" class="btn btn-outline-primary w-100 fw-bold">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hotel 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="hotel-card border-0 shadow-sm bg-white overflow-hidden rounded-4 h-100">
+                            <div class="hotel-img-wrapper overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=800&fm=webp"
+                                    srcset="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=400&fm=webp 400w,
+                                            https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=800&fm=webp 800w,
+                                            https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1200&fm=webp 1200w"
+                                    sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                                    class="img-fluid transition-all" alt="Palm Oasis" loading="lazy">
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="text-accent small fw-bold"><i class="fas fa-star"></i> 4.8
+                                        Rating</span>
+                                    <span class="price-tag fw-bold">From $320</span>
+                                </div>
+                                <h4 class="mb-1">Palm Oasis Villa</h4>
+                                <p class="text-muted small mb-4"><i class="fas fa-map-marker-alt me-1"></i> Bali,
+                                    Indonesia</p>
+                                <a href="#" class="btn btn-outline-primary w-100 fw-bold">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rooms & Suites Section -->
+        <section id="rooms" class="rooms-suites">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h6 class="text-accent text-uppercase fw-bold mb-2">Accommodations</h6>
+                    <h2 class="fw-bold">Choose Your Room</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="row g-3 g-md-4">
+                    <!-- Room 1 -->
+                    <div class="col-lg-4 col-md-6 text-start">
+                        <div class="room-card bg-white shadow-sm overflow-hidden rounded-4 transition-all h-100">
+                            <div class="room-img-wrapper position-relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=800&fm=webp"
+                                    srcset="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=400&fm=webp 400w,
+                                            https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=800&fm=webp 800w,
+                                            https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=1200&fm=webp 1200w"
+                                    sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                                    class="img-fluid transition-all" alt="Deluxe Room" loading="lazy">
+                                <div class="room-price-badge">$299 / Night</div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3">Deluxe Ocean View</h4>
+                                <div class="room-amenities-list d-flex mb-4 opacity-75 small text-nowrap">
+                                    <span class="me-3"><i class="fas fa-bed me-1 text-accent"></i> King</span>
+                                    <span class="me-3"><i class="fas fa-expand me-1 text-accent"></i> 45m²</span>
+                                    <span><i class="fas fa-users me-1 text-accent"></i> 2 Pax</span>
+                                </div>
+                                <p class="text-muted small mb-4">Experience serene comfort with an unobstructed view of
+                                    the crystal clear ocean waters.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn btn-accent px-4 py-2">Book Now</a>
+                                    <a href="#" class="text-accent fw-bold text-decoration-none small">Details <i
+                                            class="fas fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Room 2 -->
+                    <div class="col-lg-4 col-md-6 text-start">
+                        <div class="room-card bg-white shadow-sm overflow-hidden rounded-4 transition-all h-100">
+                            <div class="room-img-wrapper position-relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=800&fm=webp"
+                                    srcset="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=400&fm=webp 400w,
+                                            https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=800&fm=webp 800w,
+                                            https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1200&fm=webp 1200w"
+                                    sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                                    class="img-fluid transition-all" alt="Executive Suite" loading="lazy">
+                                <div class="room-price-badge">$450 / Night</div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3">Executive Sky Suite</h4>
+                                <div class="room-amenities-list d-flex mb-4 opacity-75 small text-nowrap">
+                                    <span class="me-3"><i class="fas fa-bed me-1 text-accent"></i> King</span>
+                                    <span class="me-3"><i class="fas fa-expand me-1 text-accent"></i> 65m²</span>
+                                    <span><i class="fas fa-users me-1 text-accent"></i> 3 Pax</span>
+                                </div>
+                                <p class="text-muted small mb-4">Located on our highest floors, offering a panoramic
+                                    view of the vibrant city skyline.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn btn-accent px-4 py-2">Book Now</a>
+                                    <a href="#" class="text-accent fw-bold text-decoration-none small">Details <i
+                                            class="fas fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Room 3 -->
+                    <div class="col-lg-4 col-md-6 text-start">
+                        <div class="room-card bg-white shadow-sm overflow-hidden rounded-4 transition-all h-100">
+                            <div class="room-img-wrapper position-relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800&fm=webp"
+                                    srcset="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=400&fm=webp 400w,
+                                            https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800&fm=webp 800w,
+                                            https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1200&fm=webp 1200w"
+                                    sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                                    class="img-fluid transition-all" alt="Presidential Villa" loading="lazy">
+                                <div class="room-price-badge">$799 / Night</div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="mb-3">Grand Presidential Villa</h4>
+                                <div class="room-amenities-list d-flex mb-4 opacity-75 small text-nowrap">
+                                    <span class="me-3"><i class="fas fa-bed me-1 text-accent"></i> 2 King</span>
+                                    <span class="me-3"><i class="fas fa-expand me-1 text-accent"></i> 120m²</span>
+                                    <span><i class="fas fa-users me-1 text-accent"></i> 5 Pax</span>
+                                </div>
+                                <p class="text-muted small mb-4">The ultimate luxury experience with a private pool,
+                                    butler service, and exclusive lounge access.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn btn-accent px-4 py-2">Book Now</a>
+                                    <a href="#" class="text-accent fw-bold text-decoration-none small">Details <i
+                                            class="fas fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities & Services Section -->
+        <section id="amenities" class="amenities-services">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h6 class="text-accent text-uppercase fw-bold mb-2">Extra Services</h6>
+                    <h2>Amenities & Facilities</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="row g-3 g-md-4 text-center">
+                    <div class="col-6 col-lg-4">
+                        <div class="amenity-item p-5 border h-100 transition-all">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-wifi fa-3x text-accent"></i>
+                            </div>
+                            <h5>High-Speed Wi-Fi</h5>
+                            <p class="text-muted small">Stay connected with our complimentary premium internet access.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="amenity-item p-5 border h-100 transition-all">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-swimming-pool fa-3x text-accent"></i>
+                            </div>
+                            <h5>Swimming Pool</h5>
+                            <p class="text-muted small">Relax and rejuvenate in our temperature-controlled infinity
+                                pools.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="amenity-item p-5 border h-100 transition-all">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-spa fa-3x text-accent"></i>
+                            </div>
+                            <h5>Spa & Wellness</h5>
+                            <p class="text-muted small">Indulge in our signature treatments and therapeutic massages.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="amenity-item p-5 border h-100 transition-all">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-dumbbell fa-3x text-accent"></i>
+                            </div>
+                            <h5>Fitness Center</h5>
+                            <p class="text-muted small">Keep up with your fitness routine in our state-of-the-art gym.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="amenity-item p-5 border h-100 transition-all">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-utensils fa-3x text-accent"></i>
+                            </div>
+                            <h5>Fine Dining</h5>
+                            <p class="text-muted small">Savor exquisite culinary delights from our world-renowned chefs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="amenity-item p-5 border h-100 transition-all">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-car fa-3x text-accent"></i>
+                            </div>
+                            <h5>Airport Transfer</h5>
+                            <p class="text-muted small">Enjoy seamless travel with our luxury chauffeur services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers Section -->
+        <section id="offers" class="special-offers bg-light">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h6 class="text-accent text-uppercase fw-bold mb-2">Limited Time</h6>
+                    <h2>Exclusive Special Offers</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="row g-3 g-md-4">
+                    <div class="col-lg-6">
+                        <div class="offer-card position-relative overflow-hidden rounded-4">
+                            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200&fm=webp"
+                                srcset="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=400&fm=webp 400w,
+                                        https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=800&fm=webp 800w,
+                                        https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200&fm=webp 1200w"
+                                sizes="(max-width: 992px) 100vw, 50vw" class="img-fluid w-100" alt="Honeymoon Offer"
+                                loading="lazy">
+                            <div class="offer-badge">30% OFF</div>
+                            <div class="offer-content p-4 p-md-5 text-white">
+                                <h3 class="mb-3">Romantic Getaway</h3>
+                                <p class="mb-4">Book your honeymoon suite and enjoy 30% off plus a complimentary dinner
+                                    for two.</p>
+                                <a href="#" class="btn btn-accent">Claim Offer</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="offer-card position-relative overflow-hidden rounded-4">
+                            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1200&fm=webp"
+                                srcset="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=400&fm=webp 400w,
+                                        https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=800&fm=webp 800w,
+                                        https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1200&fm=webp 1200w"
+                                sizes="(max-width: 992px) 100vw, 50vw" class="img-fluid w-100" alt="Family Offer"
+                                loading="lazy">
+                            <div class="offer-badge">EARLY BIRD</div>
+                            <div class="offer-content p-4 p-md-5 text-white">
+                                <h3 class="mb-3">Family Summer Fun</h3>
+                                <p class="mb-4">Book 60 days in advance and get 20% off on family suites with kids' club
+                                    access.</p>
+                                <a href="#" class="btn btn-accent">Claim Offer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guest Testimonials Section -->
+        <section id="testimonials" class="testimonials py-5 bg-dark-navy text-white">
+            <div class="container py-5">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <div class="testimonial-content mx-auto" style="max-width: 800px;">
+                                <div class="quote-icon mb-4"><i class="fas fa-quote-left fa-3x text-accent"></i></div>
+                                <p class="fs-4 italic mb-4">"An absolute paradise! The service was impeccable, and the
+                                    views from our ocean suite were breathtaking. We can't wait to return to Grand
+                                    Haven."</p>
+                                <div class="guest-info">
+                                    <h5 class="text-accent mb-0">Sarah J. Miller</h5>
+                                    <p class="small opacity-75">Loyalty Member</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="testimonial-content mx-auto" style="max-width: 800px;">
+                                <div class="quote-icon mb-4"><i class="fas fa-quote-left fa-3x text-accent"></i></div>
+                                <p class="fs-4 italic mb-4">"The attention to detail at Grand Haven is unmatched. From
+                                    the personalized welcome to the world-class spa treatments, everything was perfect."
+                                </p>
+                                <div class="guest-info">
+                                    <h5 class="text-accent mb-0">Robert Thompson</h5>
+                                    <p class="small opacity-75">Business Executive</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h6 class="text-accent text-uppercase fw-bold mb-2">Our Moments</h6>
+                    <h2>Beautiful Photo Gallery</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="gallery-item overflow-hidden rounded-3">
+                            <img src="https://images.unsplash.com/photo-1760564020380-bf0da9c0653c?w=600&auto=format&fit=crop&q=60&fm=webp"
+                                srcset="https://images.unsplash.com/photo-1760564020380-bf0da9c0653c?w=300&auto=format&fit=crop&q=60&fm=webp 300w,
+                                        https://images.unsplash.com/photo-1760564020380-bf0da9c0653c?w=600&auto=format&fit=crop&q=60&fm=webp 600w"
+                                sizes="(max-width: 576px) 100vw, (max-width: 768px) 50vw, 33vw"
+                                class="img-fluid w-100 h-100 object-fit-cover" alt="Tropical Beach" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="gallery-item overflow-hidden rounded-3">
+                            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80&w=600&fm=webp"
+                                srcset="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=300&auto=format&fit=crop&q=60&fm=webp 300w,
+                                        https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=600&auto=format&fit=crop&q=60&fm=webp 600w"
+                                sizes="(max-width: 576px) 100vw, (max-width: 768px) 50vw, 33vw"
+                                class="img-fluid w-100 h-100 object-fit-cover" alt="Luxury Infinity Pool"
+                                loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="gallery-item overflow-hidden rounded-3">
+                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=600&fm=webp"
+                                srcset="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=300&auto=format&fit=crop&q=60&fm=webp 300w,
+                                        https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&auto=format&fit=crop&q=60&fm=webp 600w"
+                                sizes="(max-width: 576px) 100vw, (max-width: 768px) 50vw, 33vw"
+                                class="img-fluid w-100 h-100 object-fit-cover" alt="Gallery 3" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="gallery-item overflow-hidden rounded-3">
+                            <img src="https://images.unsplash.com/photo-1562790351-d273a961e0e9?auto=format&fit=crop&q=80&w=800&fm=webp"
+                                srcset="https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=400&auto=format&fit=crop&q=60&fm=webp 400w,
+                                        https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=800&auto=format&fit=crop&q=60&fm=webp 800w"
+                                sizes="(max-width: 768px) 100vw, 50vw" class="img-fluid w-100 h-100 object-fit-cover"
+                                alt="Gallery 4" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="gallery-item overflow-hidden rounded-3">
+                            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=800&fm=webp"
+                                srcset="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&auto=format&fit=crop&q=60&fm=webp 400w,
+                                        https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&auto=format&fit=crop&q=60&fm=webp 800w"
+                                sizes="(max-width: 768px) 100vw, 50vw" class="img-fluid w-100 h-100 object-fit-cover"
+                                alt="Gallery 5" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact bg-light">
+            <div class="container">
+                <div class="row g-3 g-lg-5 align-items-center">
+                    <div class="col-lg-5">
+                        <h2 class="mb-4">Get in Touch</h2>
+                        <p class="text-muted mb-5">Have questions or need assistance with your booking? Our dedicated
+                            concierge team is available 24/7.</p>
+
+                        <div class="d-flex mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-map-marker-alt fs-4 text-accent"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">Our Location</h6>
+                                <p class="text-muted small mb-0">123 Luxury Avenue, Paradise Island, Maldives</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone-alt fs-4 text-accent"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">Phone Number</h6>
+                                <p class="text-muted small mb-0">+1 (888) GRAND-HAVEN</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope fs-4 text-accent"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1">Email Address</h6>
+                                <p class="text-muted small mb-0">reservations@grandhaven.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="contact-form bg-white p-5 rounded-4 shadow-sm">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control py-3" placeholder="Full Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control py-3" placeholder="Email Address">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control py-3" placeholder="Subject">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary px-5 py-3 w-100">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-navy text-white pt-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="brand-text text-accent mb-4">GRAND HAVEN</h4>
+                    <p class="opacity-75 mb-4">Redefining luxury hospitality since 1995. Experience the world's most
+                        exquisite destinations with unparalleled service and elegance.</p>
+                    <div class="social-links d-flex">
+                        <a href="#" class="text-white me-3 fs-5 transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3 fs-5 transition-all"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3 fs-5 transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5 transition-all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#hotels" class="text-white text-decoration-none">Hotels</a></li>
+                        <li class="mb-2"><a href="#rooms" class="text-white text-decoration-none">Rooms</a></li>
+                        <li class="mb-2"><a href="#amenities" class="text-white text-decoration-none">Amenities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4">Legal</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="opacity-75 mb-4">Subscribe to receive our latest offers and travel inspiration.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-transparent border-secondary text-white"
+                            placeholder="Email Address">
+                        <button class="btn btn-accent px-3">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-top border-secondary py-4 text-center">
+            <p class="mb-0 small opacity-50">&copy; 2026 Grand Haven Hotel & Resort. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
