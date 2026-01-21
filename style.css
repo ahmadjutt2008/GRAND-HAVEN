@@ -1,0 +1,485 @@
+/* 
+    Grand Haven - Luxury Hotel Booking Website
+    Custom Styles
+*/
+
+:root {
+    --primary-color: #0a192f;
+    --primary-light: #172a45;
+    --accent-color: #c5a059;
+    --accent-hover: #b38f4d;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --ff-heading: 'Playfair Display', serif;
+    --ff-body: 'Inter', sans-serif;
+}
+
+/* Global Styles */
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--ff-body);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-heading);
+    font-weight: 700;
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.bg-dark-navy {
+    background-color: var(--primary-color);
+}
+
+.transition-all {
+    transition: var(--transition);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.3);
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 0;
+    transition: var(--transition);
+}
+
+.navbar.scrolled {
+    background-color: var(--primary-color);
+    padding: 12px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand .brand-text {
+    font-family: var(--ff-heading);
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--white) !important;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: var(--white) !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0 10px;
+    opacity: 0.8;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-color) !important;
+    opacity: 1;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(10, 25, 47, 0.4), rgba(10, 25, 47, 0.4)),
+        url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=70&w=1920&fm=webp') center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding: 120px 0 80px;
+}
+
+.booking-form-wrapper {
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booking-form-wrapper form {
+    border-bottom: 4px solid var(--accent-color);
+}
+
+/* Animations */
+.animate-up {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.animate-up-delay-1 {
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.3s forwards;
+}
+
+.animate-up-delay-2 {
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sections */
+section {
+    padding: clamp(50px, 10vw, 100px) 0;
+}
+
+.section-title {
+    margin-bottom: clamp(30px, 6vw, 60px);
+}
+
+.section-title h2 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: 15px;
+}
+
+.section-title .divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 0 auto;
+}
+
+/* Hotel Cards */
+.hotel-card {
+    transition: var(--transition);
+}
+
+.hotel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.hotel-img-wrapper img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hotel-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Room Cards */
+.room-card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.room-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.room-img-wrapper {
+    height: 250px;
+}
+
+.room-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.room-price-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 8px 15px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+/* Amenity Items */
+.amenity-item {
+    background-color: var(--white);
+}
+
+.amenity-item:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-5px);
+    border-color: var(--primary-color) !important;
+}
+
+.amenity-item:hover .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.amenity-item:hover .text-accent {
+    color: var(--white);
+}
+
+/* Special Offers */
+.offer-card {
+    height: 400px;
+}
+
+.offer-card img {
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.offer-card:hover img {
+    transform: scale(1.05);
+}
+
+.offer-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+.offer-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(10, 25, 47, 0.9));
+    z-index: 1;
+}
+
+/* Testimonials */
+.testimonials {
+    background: linear-gradient(rgba(10, 25, 47, 0.95), rgba(10, 25, 47, 0.95)),
+        url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=60&w=1200&fm=webp') center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Gallery */
+.gallery-item {
+    height: 250px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    transition: var(--transition);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+/* Contact */
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form .form-control {
+    border: 1px solid #eee;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: none;
+}
+
+/* Footer */
+footer a:hover {
+    color: var(--accent-color) !important;
+    padding-left: 5px;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    color: var(--accent-color) !important;
+    padding-left: 0 !important;
+}
+
+@media (max-width: 991.98px) {
+    section {
+        padding: 60px 0;
+    }
+
+    .navbar {
+        background-color: var(--primary-color);
+        padding: 12px 0;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+        background-color: var(--primary-color);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-item {
+        margin: 8px 0;
+    }
+
+    .nav-link {
+        font-size: 1.05rem;
+        display: inline-block;
+    }
+
+    .hero-section,
+    .testimonials {
+        background-attachment: scroll;
+    }
+
+    .hero-section {
+        background-image: linear-gradient(rgba(10, 25, 47, 0.4), rgba(10, 25, 47, 0.4)),
+            url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=70&w=800&fm=webp');
+    }
+
+    .testimonials {
+        background-image: linear-gradient(rgba(10, 25, 47, 0.95), rgba(10, 25, 47, 0.95)),
+            url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=60&w=600&fm=webp');
+    }
+
+    .hero-section {
+        padding: 120px 0 60px;
+    }
+
+    .display-3 {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .offer-card {
+        height: 350px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .booking-form-wrapper form {
+        padding: 20px !important;
+    }
+
+    .booking-form-wrapper .btn {
+        margin-top: 10px;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial-content p {
+        font-size: 1.1rem !important;
+    }
+
+    .gallery-item {
+        height: 200px;
+    }
+
+    .contact-form {
+        padding: 30px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand .brand-text {
+        font-size: 1.2rem;
+    }
+
+    .display-3 {
+        font-size: 1.8rem;
+    }
+
+    .offer-card {
+        height: 300px;
+    }
+
+    .room-price-badge {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    .amenity-item {
+        padding: 30px 15px !important;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+}
